@@ -1,0 +1,36 @@
+{
+	"root": true,
+	"extends": [
+		"@techmmunity/eslint-config/common",
+		"@techmmunity/eslint-config/typescript"
+	],
+	"overrides": [
+		{
+			"files": ["src/types/enums/*.ts"],
+			"rules": {
+				"@typescript-eslint/no-magic-numbers": "off"
+			}
+		}
+	],
+	"rules": {
+		"import-helpers/order-imports": [
+			"warn",
+			{
+				"newlinesBetween": "always",
+				"groups": [
+					"module",
+					"/controllers/",
+					"/middlewares/",
+					"/prisma/",
+					"/services/",
+					"/types/",
+					["parent", "sibling", "index"]
+				],
+				"alphabetize": {
+					"order": "asc",
+					"ignoreCase": true
+				}
+			}
+		]
+	}
+}

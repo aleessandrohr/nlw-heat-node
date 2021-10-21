@@ -1,0 +1,95 @@
+{
+	// Define Tab Size = 2 Spaces (Half of the Default Size)
+	"editor.tabSize": 2,
+
+	// Disable Tab To Space Conversion
+	"editor.insertSpaces": false,
+
+	// Config Default End Of Line Formatting
+	"files.eol": "\n",
+
+	// Enable Format On Save
+	"editor.formatOnSave": true,
+
+	// Make ESLint fix all the things that he can on save (like prettier formating)
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	},
+
+	// Color of Comments
+	"editor.tokenColorCustomizations": {
+		"comments": "#00A0EB"
+	},
+
+	// Make VSCode understand this files as files of this languages
+	"files.associations": {
+		".env.*": "env",
+		".lintstagedrc": "json"
+	},
+
+	// ================ Languages General Config ====================
+
+	// TypeScript
+	"typescript.suggest.autoImports": true,
+	"typescript.updateImportsOnFileMove.enabled": "always",
+
+	// JavaScript
+	"javascript.suggest.autoImports": true,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+
+	// ======================= Formatters ===========================
+
+	// Make Prettier The Default Code Formatter
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+
+	"[javascript]": {
+		"editor.defaultFormatter": null
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": null
+	},
+	"[javascriptreact]": {
+		"editor.defaultFormatter": null
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": null
+	},
+
+	// =========== Plugins & Extensions General Config ===============
+
+	// GitLens
+	"gitlens.codeLens.authors.enabled": true,
+	"gitlens.codeLens.enabled": false,
+	"gitlens.codeLens.recentChange.enabled": false,
+
+	// ESlint
+	"eslint.packageManager": "yarn",
+	"eslint.validate": [
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact"
+	],
+
+	// Material Icon Theme
+	"material-icon-theme.folders.associations": {
+		"types": "typescript",
+		"enums": "typescript",
+		"interfaces": "typescript"
+	},
+
+	// TODO Tree
+	"todo-tree.general.tags": ["BUG", "HACK", "FIXME", "TODO", "[ ]"],
+	"todo-tree.tree.showScanModeButton": false,
+	"todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+
+	// Code Spell Checker
+	"cSpell.words": [
+		"aleessandrohr",
+		"camelcase",
+		"middlewares",
+		"respawn",
+		"signin",
+		"techmmunity"
+	]
+}

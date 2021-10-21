@@ -1,0 +1,21 @@
+{
+	"compilerOptions": {
+		"target": "es2017",
+		"lib": ["es6"],
+		"module": "commonjs",
+		"rootDir": "src",
+		"baseUrl": "src",
+		"typeRoots": ["node_modules/@types", "src/types"],
+		"types": ["node"],
+		"resolveJsonModule": true,
+		"allowJs": true,
+		"outDir": "build",
+		"removeComments": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"skipLibCheck": true
+	},
+	"exclude": ["node_modules"],
+	"include": ["**/*.ts"],
+	"files": ["src/types/express.d.ts"]
+}
